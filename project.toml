@@ -1,0 +1,12 @@
+[project]
+
+title = "Test Package"
+description = "Short description of the project."
+
+[author]
+
+name = "Thiago Nepomuceno"
+email = "test@gmail.com"
+
+# [package]
+# name = "test_package"
