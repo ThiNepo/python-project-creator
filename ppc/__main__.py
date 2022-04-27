@@ -23,8 +23,8 @@ def create(template, output):
     click.echo(f"Creating project with template {template} at {output}")
 
     try:
-        creator = PythonProjectCreator()
-        creator.create(template, output)
+        creator = PythonProjectCreator(model=None, template=template)
+        creator.create(output)
         click.echo("Project created :)")
     except jinja2.exceptions.UndefinedError as e:
         print(e)
