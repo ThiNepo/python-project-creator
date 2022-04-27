@@ -1,1 +1,1 @@
-include PythonProjectCreator/templates/*
+include ppc/templates/*

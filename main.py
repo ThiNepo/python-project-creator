@@ -1,4 +1,4 @@
-from ppc import PythonProjectCreator
+from ppc.python_project_creator import PythonProjectCreator
 import toml
 import os
 
@@ -8,4 +8,4 @@ with open("project.toml") as file:
     print(project_model)
 
 creator = PythonProjectCreator(project_model)
-creator.create("pip", "projects/pip_project")
+creator.create("basic", "projects/basic_project")

@@ -1,5 +1,6 @@
 import setuptools
 import shutil
+import os
 
 from setuptools.command.sdist import sdist
 from wheel.bdist_wheel import bdist_wheel
@@ -13,7 +14,8 @@ def clean_folders():
 
     TMP_FOLDERS = ["python_project_creator.egg-info", "build"]
     for folder in TMP_FOLDERS:
-        shutil.rmtree(folder)
+        if os.path.exists(folder):
+            shutil.rmtree(folder)
 
 
 class SdistCommand(sdist):
@@ -21,6 +23,7 @@ class SdistCommand(sdist):
 
     def run(self):
         sdist.run(self)
+        clean_folders()
 
 
 class BdistWheelCommand(bdist_wheel):
@@ -33,7 +36,7 @@ class BdistWheelCommand(bdist_wheel):
 
 setuptools.setup(
     name="python-project-creator",
-    version="0.0.1",
+    version="0.0.2",
     author="Thiago Nepomuceno",
     author_email="thi.nepo@gmail.com",
     description="It is a code generator for Python projects.",
@@ -43,7 +46,7 @@ setuptools.setup(
     url="https://github.com/ThiNepo/python-project-creator",
     packages=setuptools.find_packages(),
     entry_points={
-        "console_scripts": ["ppc=ppc_cli.main:main"],
+        "console_scripts": ["ppc=ppc.__main__:main"],
     },
     classifiers=[
         "Programming Language :: Python :: 3",
