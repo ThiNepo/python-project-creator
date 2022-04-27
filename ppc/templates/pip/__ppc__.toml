@@ -1,0 +1,18 @@
+[variables.project]
+
+title = 'String'
+description = 'String'
+
+[variables.author]
+
+name = 'String'
+email = 'String'
+
+[variables.package]
+
+name = 'String'
+
+# Replace following values on routes by values on project config.
+[replace_on_routes]
+
+__package_name__ = "package.name"

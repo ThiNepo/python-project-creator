@@ -1,5 +1,6 @@
 import setuptools
 import shutil
+import os
 
 from setuptools.command.sdist import sdist
 from wheel.bdist_wheel import bdist_wheel
@@ -14,7 +15,8 @@ def clean_folders():
 
     TMP_FOLDERS = ["{{project_name}}.egg-info", "build"]
     for folder in TMP_FOLDERS:
-        shutil.rmtree(folder)
+        if os.path.exists(folder):
+            shutil.rmtree(folder)
 
 
 class SdistCommand(sdist):
@@ -22,6 +24,7 @@ class SdistCommand(sdist):
 
     def run(self):
         sdist.run(self)
+        clean_folders()
 
 
 class BdistWheelCommand(bdist_wheel):

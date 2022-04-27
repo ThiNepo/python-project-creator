@@ -8,5 +8,6 @@ description = "Short description of the project."
 name = "Thiago Nepomuceno"
 email = "test@gmail.com"
 
-# [package]
-# name = "test_package"
+[package]
+
+name = "test_package"
