@@ -1,6 +1,6 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-project-creator) ![PyPI](https://img.shields.io/pypi/v/python-project-creator)
 
-![Discord](https://img.shields.io/discord/479923444017004556?label=discord) ![PyPI - Downloads](https://img.shields.io/pypi/dm/python-project-creator) ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCMb90JgsFJpZyZzdmWCaCTg?style=social)
+[![Discord](https://img.shields.io/discord/479923444017004556?label=discord)](https://discord.gg/jWWDRyD5Nu) [![PyPI - Downloads](https://img.shields.io/pypi/dm/python-project-creator)](https://pypi.org/project/python-project-creator/) [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCMb90JgsFJpZyZzdmWCaCTg?style=social)](https://www.youtube.com/channel/UCMb90JgsFJpZyZzdmWCaCTg)
 
 ![Logo](https://github.com/ThiNepo/python-project-creator/raw/main/images/logo.svg)
 
