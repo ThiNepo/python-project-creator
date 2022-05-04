@@ -35,7 +35,7 @@ class BdistWheelCommand(bdist_wheel):
 
 setuptools.setup(
     name="python-project-creator",
-    version="0.0.2",
+    version="0.0.3",
     author="Thiago Nepomuceno",
     author_email="thi.nepo@gmail.com",
     description="It is a code generator for Python projects.",
