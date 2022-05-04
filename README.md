@@ -1,4 +1,4 @@
-# Python Project Creator
+![Logo](images/logo.svg)
 
 This tool generates help you start a new Python project by generating its starting code. In the current stage it only generates very simple project, but more is planned to be added in the future (_including a Flask project with features selection_).
 
