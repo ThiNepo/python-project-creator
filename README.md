@@ -1,4 +1,8 @@
-![Logo](images/logo.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-project-creator) ![PyPI](https://img.shields.io/pypi/v/python-project-creator)
+
+![Discord](https://img.shields.io/discord/479923444017004556?label=discord) ![PyPI - Downloads](https://img.shields.io/pypi/dm/python-project-creator) ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCMb90JgsFJpZyZzdmWCaCTg?style=social)
+
+![Logo](https://github.com/ThiNepo/python-project-creator/raw/main/images/logo.svg)
 
 This tool generates help you start a new Python project by generating its starting code. In the current stage it only generates very simple project, but more is planned to be added in the future (_including a Flask project with features selection_).
 
