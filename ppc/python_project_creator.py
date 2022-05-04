@@ -5,7 +5,7 @@ import copy
 
 from jinja2.exceptions import UndefinedError
 
-TEMPLATES_FOLDER = os.path.join("ppc", "templates")
+TEMPLATES_FOLDER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "templates")
 
 
 def render_template(path: str, **kwargs):
@@ -50,7 +50,7 @@ class PythonProjectCreator:
         if os.path.exists(os.path.join(TEMPLATES_FOLDER, self.template, "__ppc__.toml")):    
             with open(os.path.join(TEMPLATES_FOLDER, self.template, "__ppc__.toml")) as file:
                 project_config = toml.loads(file.read())
-                return project_config
+        return project_config
 
     def __create(self, project_template, output_path):
 
@@ -63,6 +63,7 @@ class PythonProjectCreator:
                     
         if not os.path.exists(output_path):
             os.makedirs(output_path)
+
 
         for file in os.listdir(os.path.join(TEMPLATES_FOLDER, project_template)):
             # ignore configuration file

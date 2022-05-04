@@ -15,7 +15,20 @@ def main():
 @click.option("-t", "--template", help="Template to use.")
 @click.argument("output")
 def create(template, output):
-    """Create a python project based on a template."""
+    """Create a python project based on a template.
+    
+    Currently the following templates are supported:
+
+    * basic
+    * cp
+    * pip
+
+    To create a project you can run `ppc create --template pip projects/new_project`.
+
+    This will create a project in the folder `projects/new_project`.
+
+    The default template is `basic`.
+    """
 
     if template is None:
         template = "basic"

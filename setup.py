@@ -33,7 +33,6 @@ class BdistWheelCommand(bdist_wheel):
         bdist_wheel.run(self)
         clean_folders()
 
-
 setuptools.setup(
     name="python-project-creator",
     version="0.0.2",

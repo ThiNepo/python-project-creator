@@ -3,10 +3,9 @@ import toml
 import os
 
 project_model = None
-# with open("project.toml") as file:
-#     project_model = toml.loads(file.read())
-#     print(project_model)
+with open("project.toml") as file:
+    project_model = toml.loads(file.read())
+    print(project_model)
 
 creator = PythonProjectCreator(project_model, "pip")
 creator.create("projects/pip_project")
-# print(creator.get_template_config('pip'))
