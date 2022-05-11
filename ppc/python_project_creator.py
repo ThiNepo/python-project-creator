@@ -67,7 +67,7 @@ class PythonProjectCreator:
 
         for file in os.listdir(os.path.join(TEMPLATES_FOLDER, project_template)):
             # ignore configuration file
-            if file == '__ppc__.toml':
+            if file == '__ppc__.toml' or file == "__pycache__":
                 continue
 
             if os.path.isdir(os.path.join(TEMPLATES_FOLDER, project_template, file)):
